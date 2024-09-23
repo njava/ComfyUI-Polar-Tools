@@ -23,7 +23,8 @@ class SizeNode:
                     [
                         # 'Custom',
                         '633 x 1125  (抖音|16:9)',
-                        '1080 x 1920  (小红书)',
+                        '1080 x 1920 (小红书)',
+                        '1024 x 1536 (Liblib)',
                         '1536 x 640   (landscape)',
                         '1344 x 768   (landscape)',
                         '1216 x 832   (landscape)',
