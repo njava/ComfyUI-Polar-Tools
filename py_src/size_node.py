@@ -37,6 +37,12 @@ class SizeNode:
                     {
                         "default": '1024 x 1024  (square)'
                     }),
+                "clip_scale": ("FLOAT", {
+                    "default": 2.0,
+                    "min": 1.0,
+                    "max": 10.0,
+                    "step": .5
+                }),
             }
         }
 
@@ -44,12 +50,12 @@ class SizeNode:
     RETURN_NAMES = ("WIDTH", "HEIGHT")
     FUNCTION = "generate"
 
-    def generate(self, dimensions):
+    def generate(self, dimensions, clip_scale):
         if True:
             result = [x.strip() for x in dimensions.split('x')]
             width = int(result[0])
             height = int(result[1].split(' ')[0])
         return (
-            int(width),
-            int(height),
+            int(width * clip_scale),
+            int(height * clip_scale),
         )
