@@ -40,7 +40,7 @@ class SizeNode:
                     }),
                 "clip_scale": ("FLOAT", {
                     "default": 2.0,
-                    "min": 1.0,
+                    "min": 0.5,
                     "max": 10.0,
                     "step": .5
                 }),
