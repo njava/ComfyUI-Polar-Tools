@@ -2,4 +2,5 @@
 
 Polar 的 comfyui 工具箱
 
-1. Comfyui 图片尺寸节点，小红书，抖音尺寸
+1. SizeNode 图片尺寸节点，输出小红书，抖音，liblib 网站全屏尺寸要求宽和高
+2. OneGirlModelFluxPromptsNode 一个女孩模特提示词，输出 clip_l 和 t5xxl 要求的提示词
