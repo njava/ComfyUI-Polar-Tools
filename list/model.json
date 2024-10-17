@@ -551,6 +551,7 @@
   "帽子Flux": {
     "None": "",
     "侗族头饰": "Dong-ethnic-headdress",
+    "鲤鱼苗寨墨绿帽子": "green miao-hat",
     "布依族格子头帕": "Bouyei_checkered_headscarf",
     "布依族牛角头帕": "Bouyei_OxHorn_headscarf",
     "歪梳苗梳子": "wsmiao comb"
@@ -599,7 +600,8 @@
     "开衫毛衣": "cardigan sweater with button details",
     "斜肩连衣裙": "one-shoulder dress with asymmetrical cut",
     "==================民族服装===============": "",
-    "侗族服饰和侗族裙子": "wears a delicate,flowing Dong-ethnic-clothing and Dong-ethnic-skirt "
+    "侗族服饰和侗族裙子": "wears a delicate,flowing Dong-ethnic-clothing and Dong-ethnic-skirt ",
+    "鲤鱼苗寨红色苗服": "red miao-clothes"
   },
   "裤子": {
     "None": "",
