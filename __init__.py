@@ -8,7 +8,7 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     SizeNode.NAME: "图片尺寸|ImageSize",
-    OneGirlModelFluxPromptsNode.NAME: "一个女模特提示词"
+    OneGirlModelFluxPromptsNode.NAME: "一个女模特提示词|OneGirlModel Flux.1"
 }
 
 print("\033[34mComfyUI 🐻‍❄️Polar's Tools: \033[92mLoaded\033[0m")

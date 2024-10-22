@@ -50,7 +50,21 @@ class OneGirlModelFluxPromptsNode:
                 "Action": (list(cls.options.get("模特动作|Action", {}).keys()), ),
                 "Composition":
                 (list(cls.options.get("构图Composition", {}).keys()), ),
-                "Scene": (list(cls.options.get("场景Scene", {}).keys()), ),
+                "SceneSpring":
+                (list(cls.options.get("场景Scene_spring", {}).keys()), ),
+                "SceneSummer":
+                (list(cls.options.get("场景Scene_summer", {}).keys()), ),
+                "SceneAutumn":
+                (list(cls.options.get("场景Scene_autumn", {}).keys()), ),
+                "SceneWinter": (list(
+                    cls.options.get("场景Scene_winter", {}).keys()), ),
+                "SceneT": (list(cls.options.get("场景Scene_T", {}).keys()), ),
+                "SceneRoom": (list(cls.options.get("场景Scene_room",
+                                                   {}).keys()), ),
+                "SceneSimple": (list(
+                    cls.options.get("场景Scene_simple", {}).keys()), ),
+                "SceneGuizhou": (list(
+                    cls.options.get("场景Scene_Guizhou", {}).keys()), ),
                 "HatColor": (list(cls.options.get("颜色Color", {}).keys()), ),
                 "Hat": (list(cls.options.get("帽子Flux", {}).keys()), ),
                 "Hat_weight": ("FLOAT", {
@@ -60,8 +74,8 @@ class OneGirlModelFluxPromptsNode:
                     "max": max_float_value,
                     "display": "slider",
                 }),
-                "ClothesPattern":
-                (list(cls.options.get("图案Patterns", {}).keys()), ),
+                "ClothesPattern": (list(
+                    cls.options.get("图案Patterns", {}).keys()), ),
                 "ClothesColor": (list(cls.options.get("颜色Color",
                                                       {}).keys()), ),
                 "Clothes": (list(cls.options.get("衣服Flux", {}).keys()), ),
@@ -121,7 +135,14 @@ class OneGirlModelFluxPromptsNode:
                    BodyType="",
                    Action="",
                    Composition="",
-                   Scene="",
+                   SceneSpring="",
+                   SceneSummer="",
+                   SceneAutumn="",
+                   SceneWinter="",
+                   SceneT="",
+                   SceneRoom="",
+                   SceneSimple="",
+                   SceneGuizhou="",
                    HatColor="",
                    Hat="",
                    Hat_weight=1,
@@ -179,8 +200,29 @@ class OneGirlModelFluxPromptsNode:
             characters_action = self.options.get("模特动作|Action",
                                                  {}).get(Action, "")
 
-        if Scene:
-            scene_template = self.options.get("场景Scene", {}).get(Scene, "")
+        if SceneSpring != "None":
+            scene_template = self.options.get("场景Scene_spring",
+                                              {}).get(SceneSpring, "")
+        if SceneSummer != "None":
+            scene_template = self.options.get("场景Scene_summer",
+                                              {}).get(SceneSummer, "")
+        if SceneAutumn != "None":
+            scene_template = self.options.get("场景Scene_autumn",
+                                              {}).get(SceneAutumn, "")
+        if SceneWinter != "None":
+            scene_template = self.options.get("场景Scene_winter",
+                                              {}).get(SceneWinter, "")
+        if SceneT != "None":
+            scene_template = self.options.get("场景Scene_T", {}).get(SceneT, "")
+        if SceneRoom != "None":
+            scene_template = self.options.get("场景Scene_room",
+                                              {}).get(SceneRoom, "")
+        if SceneSimple != "None":
+            scene_template = self.options.get("场景Scene_simple",
+                                              {}).get(SceneSimple, "")
+        if SceneGuizhou != "None":
+            scene_template = self.options.get("场景Scene_Guizhou",
+                                              {}).get(SceneGuizhou, "")
 
         if Hat != "None":
             hat_color = self.options.get("颜色Color", {}).get(HatColor, "")
