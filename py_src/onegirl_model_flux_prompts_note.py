@@ -61,6 +61,8 @@ class OneGirlModelFluxPromptsNode:
                 "SceneT": (list(cls.options.get("场景Scene_T", {}).keys()), ),
                 "SceneRoom": (list(cls.options.get("场景Scene_room",
                                                    {}).keys()), ),
+                "SceneOffice": (list(
+                    cls.options.get("场景Scene_office", {}).keys()), ),
                 "SceneSimple": (list(
                     cls.options.get("场景Scene_simple", {}).keys()), ),
                 "SceneGuizhou": (list(
@@ -141,6 +143,7 @@ class OneGirlModelFluxPromptsNode:
                    SceneWinter="",
                    SceneT="",
                    SceneRoom="",
+                   SceneOffice="",
                    SceneSimple="",
                    SceneGuizhou="",
                    HatColor="",
@@ -220,6 +223,9 @@ class OneGirlModelFluxPromptsNode:
         if SceneSimple != "None":
             scene_template = self.options.get("场景Scene_simple",
                                               {}).get(SceneSimple, "")
+        if SceneOffice != "None":
+            scene_template = self.options.get("场景Scene_office",
+                                              {}).get(SceneOffice, "")
         if SceneGuizhou != "None":
             scene_template = self.options.get("场景Scene_Guizhou",
                                               {}).get(SceneGuizhou, "")
