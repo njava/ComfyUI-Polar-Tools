@@ -22,7 +22,11 @@ class SizeNode:
                 "dimensions": (
                     [
                         # 'Custom',
-                        '1080 x 1920  (抖音)',
+                        '1080 x 1920  (主流抖音)',
+                        '1440 x 2560  (2K)',
+                        '576 x 1024  (WAN2.2 原生)',
+                        '720 x 1280  (WAN2.2 720P)',
+                        '1080 x 1920  (WAN2.2 全高清)',
                         '1080 x 1440 (小红书)',
                         '1024 x 1536 (Liblib)',
                         '1536 x 640   (landscape)',
@@ -39,7 +43,7 @@ class SizeNode:
                         "default": '1024 x 1024  (square)'
                     }),
                 "clip_scale": ("FLOAT", {
-                    "default": 2.0,
+                    "default": 1.0,
                     "min": 0.5,
                     "max": 10.0,
                     "step": .5
