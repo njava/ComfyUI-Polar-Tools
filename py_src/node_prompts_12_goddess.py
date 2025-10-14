@@ -98,7 +98,7 @@ class TwelveGoddessFeaturesNode:
 
         # Set default feature values based on selected goddess
         defaults = config["特征"].get(花神选择, {}) if 花神选择 != "无" else {}
-        flower = 花朵 if 花朵 != "无" #else defaults.get("花朵", "无")
+        flower = 花朵 if 花朵 != "无" else ""  #else defaults.get("花朵", "无")
         # Get scene template from mapping or goddess defaults
         scene_template = config["花朵场景映射"].get(flower, defaults.get(
             "场景模板", "无")) if flower != "无" else "无"
