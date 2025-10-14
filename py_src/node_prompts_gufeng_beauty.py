@@ -37,6 +37,9 @@ class GufengBeautyNode:
         config = cls.load_config()
         return {
             "required": {
+                "模型选择": (config["模型选项"], {
+                    "default": "Qwen-Image"
+                }),
                 "主体年龄": (config["主体年龄选项"], {
                     "default": "——"
                 }),
@@ -58,15 +61,23 @@ class GufengBeautyNode:
             }
         }
 
-    def generate_beauty_prompt(self, 主体年龄, 发型, 体型, 面部特征, 服饰类型, 服饰细节):
+    def generate_beauty_prompt(self, 模型选择, 主体年龄, 发型, 体型, 面部特征, 服饰类型, 服饰细节):
+        config = self.load_config()
+
         subject_parts = [
             主体年龄 if 主体年龄 != "——" else "", 发型 if 发型 != "——" else "",
             体型 if 体型 != "——" else "", 面部特征 if 面部特征 != "——" else "",
             f"穿着{服饰类型}" if 服饰类型 != "——" else "", 服饰细节 if 服饰细节 != "——" else ""
         ]
-        subject_desc = "基于输入图像，保持人物外观和服饰特征，一个美丽的女人" + ("，" + "，".join(
-            [p for p in subject_parts if p]) if any(subject_parts) else "")
-        return (subject_desc, )
+
+        subject_desc = ("，".join([p for p in subject_parts
+                                  if p]) if any(subject_parts) else "")
+
+        # Use model-specific template
+        template = config["提示词模板"].get(模型选择, config["提示词模板"]["Qwen-Image"])
+        prompt = template.format(描述=subject_desc)
+
+        return (prompt, )
 
 
 NODE_CLASS_MAPPINGS = {"GufengBeautyNode": GufengBeautyNode}
