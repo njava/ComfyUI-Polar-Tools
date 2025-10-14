@@ -98,7 +98,7 @@ class TwelveGoddessFeaturesNode:
 
         # Set default feature values based on selected goddess
         defaults = config["特征"].get(花神选择, {}) if 花神选择 != "无" else {}
-        flower = 花朵 if 花朵 != "无" else defaults.get("花朵", "无")
+        flower = 花朵 if 花朵 != "无" #else defaults.get("花朵", "无")
         # Get scene template from mapping or goddess defaults
         scene_template = config["花朵场景映射"].get(flower, defaults.get(
             "场景模板", "无")) if flower != "无" else "无"
@@ -154,7 +154,7 @@ class TwelveGoddessFeaturesNode:
         desc_parts = [value for key, value in feature_inputs.items() if value]
         description = ", ".join(
             desc_parts
-        ) if desc_parts else "beautiful woman in traditional Hanfu"
+        ) if desc_parts else "8K ultra photorealistic cinematic portrait,beautiful woman in traditional Hanfu"
 
         # Use model-specific template
         template = config["提示词模板"].get(模型选择, config["提示词模板"]["Qwen-Image"])
