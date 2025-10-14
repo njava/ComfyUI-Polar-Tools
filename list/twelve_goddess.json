@@ -538,8 +538,8 @@
   ],
   "模型选项": ["Qwen-Image", "Qwen-Image-Edit", "Flux"],
   "提示词模板": {
-    "Qwen-Image": "A beautiful woman in traditional Hanfu, {描述}, intricate details, vibrant colors, soft lighting, elegant and refined atmosphere",
-    "Qwen-Image-Edit": "Preserve the character's appearance from the input image, a beautiful woman in traditional Hanfu, {描述}, intricate details, vibrant colors, soft lighting",
-    "Flux": "Elegant Hanfu woman, {描述}, vivid colors, intricate details, soft natural lighting"
+    "Qwen-Image": "A beautiful woman in traditional Hanfu, {描述}, 8K ultra high-definition photorealistic rendering.",
+    "Qwen-Image-Edit": "Preserve the character's appearance from the input image, a beautiful woman in traditional Hanfu, {描述}, 8K ultra high-definition photorealistic rendering.",
+    "Flux": "Elegant Hanfu woman, {描述}, 8K ultra high-definition photorealistic rendering."
   }
 }
