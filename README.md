@@ -15,4 +15,4 @@ Polar 的 comfyui 工具箱
    ![Comfyui TwelveGoddessFeaturesNode Screenshot](screenshot/12goddess.png)
 
 5. GufengBeautyNode 古风美女特征提示词
-   ![Comfyui GufengBeautyNode Screenshot](screenshot/GufengBeauty.png)
+   ![Comfyui GufengBeautyNode Screenshot](screenshot/gufengbeautyNode.png)
