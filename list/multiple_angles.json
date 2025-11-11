@@ -1,0 +1,35 @@
+{
+  "角度选项": {
+    "无": "",
+    
+    "向前移动": "将镜头向前移动（Move the camera forward.）",
+    "向左移动": "将镜头向左移动（Move the camera left.）",
+    "向右移动": "将镜头向右移动（Move the camera right.）",
+    "向下移动": "将镜头向下移动（Move the camera down.）",
+    "向上移动": "将镜头向上移动（Move the camera up.）",
+    "向后移动": "将镜头向后移动（Move the camera backward.）",
+
+    "左转45度": "将镜头向左旋转45度（Rotate the camera 45 degrees to the left.）",
+    "右转45度": "将镜头向右旋转45度（Rotate the camera 45 degrees to the right.）",
+    "左转90度": "将镜头向左旋转90度（Rotate the camera 90 degrees to the left.）",
+    "右转90度": "将镜头向右旋转90度（Rotate the camera 90 degrees to the right.）",
+
+    "转为俯视": "将镜头转为俯视（Turn the camera to a top-down view.）",
+    "转为仰视": "将镜头转为仰视（Turn the camera to a bottom-up view.）",
+    "转为侧面": "将镜头转为侧面视角（Turn the camera to a side view.）",
+    "转为正面": "将镜头转回正面（Return the camera to front view.）",
+
+    "转为广角": "将镜头转为广角镜头（Turn the camera to a wide-angle lens.）",
+    "转为标准": "将镜头转为标准镜头（Switch to a standard lens.）",
+    "转为长焦": "将镜头转为长焦镜头（Switch to a telephoto lens.）",
+    "转为特写": "将镜头转为特写镜头（Turn the camera to a close-up.）",
+    "聚焦面部": "镜头推近，聚焦面部细节（Zoom in and focus on facial details.）",
+    "聚焦服饰": "镜头推近，聚焦汉服纹理与细节（Zoom in on Hanfu fabric and details.）",
+
+    "环绕拍摄": "镜头360度缓慢环绕人物（Camera slowly orbits 360 degrees around the subject.）",
+    "推镜头": "缓慢推近人物（Slow dolly-in toward the subject.）",
+    "拉镜头": "缓慢拉远镜头（Slow dolly-out from the subject.）",
+    "摇镜头": "镜头上下摇动（Camera pans up and down.）",
+    "甩镜头": "快速甩动镜头（Fast whip pan.）"
+  }
+}

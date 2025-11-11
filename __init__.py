@@ -4,6 +4,7 @@ from .py_src.node_prompts_wan22_shooting import Wan22ShootingNode
 from .py_src.node_prompts_gufeng_beauty import GufengBeautyNode
 from .py_src.node_prompts_12_goddess import TwelveGoddessFeaturesNode
 from .py_src.node_prompts_keyframe import DynamicCinematicKeyframeNode
+from .py_src.node_prompts_multiple_angles import MultipleAnglesNode
 
 NODE_CLASS_MAPPINGS = {
     ImageSizeNode.NAME: ImageSizeNode,
@@ -11,7 +12,8 @@ NODE_CLASS_MAPPINGS = {
     Wan22ShootingNode.NAME: Wan22ShootingNode,
     GufengBeautyNode.NAME: GufengBeautyNode,
     TwelveGoddessFeaturesNode.NAME: TwelveGoddessFeaturesNode,
-    DynamicCinematicKeyframeNode.NAME: DynamicCinematicKeyframeNode
+    DynamicCinematicKeyframeNode.NAME: DynamicCinematicKeyframeNode,
+    MultipleAnglesNode.NAME: MultipleAnglesNode
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -20,7 +22,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     Wan22ShootingNode.NAME: "Wan2.2视频镜头|Wan2.2",
     GufengBeautyNode.NAME: "古风美女|GuFengBeauty",
     TwelveGoddessFeaturesNode.NAME: "汉服女12花神特征|TwelveGoddess",
-    DynamicCinematicKeyframeNode.NAME: "电影关键帧|DynamicCinematicKeyframeNode"
+    DynamicCinematicKeyframeNode.NAME: "电影关键帧|DynamicCinematicKeyframeNode",
+    MultipleAnglesNode.NAME: "多角度镜头转换提示词|Qwen-Edit-2509-Multiple-angles Lora "
 }
 
 print("\033[34mComfyUI 🐻‍❄️Polar's Tools: \033[92mLoaded\033[0m")
